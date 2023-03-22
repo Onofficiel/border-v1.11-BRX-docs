@@ -2,7 +2,7 @@
 
 ## Methods
 
-### `sendMessage()`
+### `border.runtime.sendMessage()`
 Sends a message to another page in the extension.
 
 Parameters:<br>
@@ -16,7 +16,7 @@ border.runtime.sendMessage("this-is-the-message", (reply) => {
 });
 ```
 
-### `getManifest()`
+### `border.runtime.getManifest()`
 Gets the extension's [`manifest.json`](/manifest.md) file.
 
 Parameters:<br>
