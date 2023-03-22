@@ -1,0 +1,5 @@
+# Type Structures
+
+## Events
+
+### `BorderRuntimeMessageEvent`
