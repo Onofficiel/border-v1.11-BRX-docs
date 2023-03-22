@@ -32,11 +32,12 @@ namespace border {
             }
         }
         function on<K extends keyof BorderRuntimeEventType>(
-            type: K
+            type: K,
+            callback: (event: BorderRuntimeEventType[K]) => any
         )
     }
 }
 
 interface BorderRuntimeEventType {
-    "message": BorderMessageEvent
+    "message": BorderRuntimeMessageEvent
 }
