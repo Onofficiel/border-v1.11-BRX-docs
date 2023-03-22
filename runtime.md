@@ -19,7 +19,7 @@ border.runtime.sendMessage("this-is-the-message", (reply) => {
 ### `message` event
 Fired when one of the extension's pages receives a message.
 
-Fires: A [`BorderMessageEvent`](/events.md#bordermessageevent)
+Fires: A [`BorderMessageEvent`](/types.md#bordermessageevent)
 
 ```javascript
 border.runtime.on("message", function (event) {
@@ -35,7 +35,7 @@ Gets the extension's [`manifest.json`](/manifest.md) file.
 Parameters:<br>
 None.
 
-Returns: An [`Object`](/types.md#Object) containing the contents of the [`manifest.json`](/manifest.md) file.
+Returns: An `Object` containing the contents of the [`manifest.json`](/manifest.md) file.
 
 ```javascript
 console.log(`Welcome to ${border.runtime.getManifest().name}, version ${border.runtime.getManifest().version}!`)
