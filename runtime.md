@@ -1,8 +1,8 @@
 # `border.runtime` API
 
-## Methods
+## `border.runtime`
 
-### `border.runtime.sendMessage()`
+### `sendMessage()`
 Sends a message to another page in the extension.
 
 Parameters:<br>
@@ -16,20 +16,6 @@ border.runtime.sendMessage("this-is-the-message", (reply) => {
 });
 ```
 
-### `border.runtime.getManifest()`
-Gets the extension's [`manifest.json`](/manifest.md) file.
-
-Parameters:<br>
-None.
-
-Returns: An `Object` containing the contents of the [`manifest.json`](/manifest.md) file.
-
-```javascript
-console.log(`Welcome to ${border.runtime.getManifest().name}, version ${border.runtime.getManifest().version}!`)
-```
-
-## Events
-
 ### `message` event
 Fired when one of the extension's pages receives a message.
 
@@ -41,4 +27,16 @@ border.runtime.on("message", function (event) {
     event.sender.reply("...")
   }
 });
+```
+
+### `getManifest()`
+Gets the extension's [`manifest.json`](/manifest.md) file.
+
+Parameters:<br>
+None.
+
+Returns: An `Object` containing the contents of the [`manifest.json`](/manifest.md) file.
+
+```javascript
+console.log(`Welcome to ${border.runtime.getManifest().name}, version ${border.runtime.getManifest().version}!`)
 ```
