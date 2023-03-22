@@ -15,5 +15,10 @@ namespace border {
             message: string,
             onreply?: (reply) => void
         ):void;
+        function getManifest():BluginManifestV2
     }
+}
+
+declare class BluginManifestV2 {
+    
 }
