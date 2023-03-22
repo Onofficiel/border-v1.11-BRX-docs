@@ -15,10 +15,21 @@ namespace border {
             message: string,
             onreply?: (reply) => void
         ):void;
-        function getManifest():BluginManifestV2
+        /**
+         * Gets the extension manifest.
+         */
+        function getManifest(): {
+            name: string,
+            description?: string,
+            version: string,
+            manifest_version: number,
+            permissions?: string[],
+            icons?: {
+                [string]: string
+            },
+            background?: {
+                scripts?: string[]
+            }
+        }
     }
-}
-
-declare class BluginManifestV2 {
-    
 }
