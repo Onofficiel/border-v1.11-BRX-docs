@@ -31,5 +31,12 @@ namespace border {
                 scripts?: string[]
             }
         }
+        function on<K extends keyof BorderRuntimeEventType>(
+            type: K
+        )
     }
+}
+
+interface BorderRuntimeEventType {
+    "message": BorderMessageEvent
 }
